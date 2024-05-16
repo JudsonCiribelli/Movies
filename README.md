@@ -1,0 +1,1 @@
+Bem-vindo ao meu projeto de Catálogo de Filmes desenvolvido com React JS! Esta aplicação permite aos usuários visualizar, adicionar e excluir filmes de um catálogo pessoal. A interface é intuitiva e oferece uma experiência de usuário fluida, aproveitando as funcionalidades modernas do React, como roteamento de páginas e consumo de API.
