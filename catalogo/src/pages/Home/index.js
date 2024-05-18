@@ -5,7 +5,7 @@ function Home() {
     <div>
       <h2>Pagina Home</h2>
       <Link to="/">Primeira pagina</Link> <br></br>
-      <Link to="/About"> Sobre</Link>
+      <Link to="/Movies"> Sobre</Link>
     </div>
   );
 }
