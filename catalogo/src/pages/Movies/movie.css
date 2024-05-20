@@ -1,0 +1,30 @@
+.main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.container1 {
+  width: 50%;
+}
+
+.container1 img {
+  height: 700px;
+  width: 800px;
+  border-radius: 6px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container2 h1 {
+  padding-bottom: 40px;
+}
+.container2 span {
+  padding-bottom: 20px;
+}
