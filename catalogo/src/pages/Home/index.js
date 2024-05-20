@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 function Home() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     async function loadfilmes() {
       const response = await api.get("movie/now_playing", {
@@ -38,13 +39,13 @@ function Home() {
       <div className="list-movies">
         {movies.map((movies) => {
           return (
-            <article key={Movies.id}>
+            <article key={movies.id}>
               <strong>{movies.title}</strong>
               <img
                 src={`https://image.tmdb.org/t/p/original/${movies.poster_path}`}
                 alt={movies.title}
               />
-              <Link to={`/Movies/${Movies.id}`}>Acessar</Link>
+              <Link to={`/Movies/${movies.id}`}>Acessar</Link>
             </article>
           );
         })}

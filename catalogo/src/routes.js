@@ -11,7 +11,6 @@ function RouteApp() {
       <Routes>
         <Route path="/Home" element={<Home />} />
         <Route path="/Movies/:id" element={<Movies />} />
-
         <Route path="*" element={<Erro />} />
       </Routes>
     </BrowserRouter>
