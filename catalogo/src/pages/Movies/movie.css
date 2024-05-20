@@ -1,3 +1,6 @@
+body {
+  background-color: #022b42;
+}
 .main {
   width: 90%;
   display: flex;
@@ -12,7 +15,7 @@
 
 .container1 img {
   height: 700px;
-  width: 800px;
+  max-width: 800px;
   border-radius: 6px;
 }
 .container2 {
@@ -23,8 +26,35 @@
   flex-direction: column;
 }
 .container2 h1 {
+  color: #fff;
   padding-bottom: 40px;
 }
 .container2 span {
   padding-bottom: 20px;
+  color: #fff;
+}
+.container2 span strong {
+  color: #8aaee0;
+}
+.container2 strong {
+  color: #fff;
+}
+.area-buttons button {
+  margin: 20px 12px 0 0;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.area-buttons button:hover {
+  background-color: #006da4;
+  color: #121212;
+  transition: all 0.5s;
+}
+.area-buttons a {
+  text-decoration: none;
+  color: #121212;
 }

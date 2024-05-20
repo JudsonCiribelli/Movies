@@ -7,7 +7,7 @@
 }
 .container .list-movies article {
   width: 100%;
-  background-color: #fff;
+  background-color: #022b42;
   padding: 15px;
   border-radius: 6px;
 }
@@ -17,6 +17,7 @@
   height: 500px;
 }
 .container .list-movies article strong {
+  color: #fff;
   margin-bottom: 14px;
   font-size: 22px;
   display: block;

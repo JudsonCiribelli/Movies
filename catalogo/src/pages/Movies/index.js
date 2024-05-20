@@ -51,8 +51,19 @@ function Movies() {
       </div>
       <div className="container2">
         <h1>{movie.title}</h1>
-        <span>{movie.overview}</span>
+        <span>
+          <strong>Sinopse: </strong>
+          {movie.overview}
+        </span>
+        <strong>Popularidade: {movie.popularity}</strong>
+        <strong>Data de lançamento: {movie.release_date}</strong>
         <strong>Avaliação: {movie.vote_average} /10</strong>
+        <div className="area-buttons">
+          <button>Salvar</button>
+          <button>
+            <a href="#">Trailer</a>
+          </button>
+        </div>
       </div>
     </div>
   );
