@@ -7,8 +7,9 @@ body {
   font-family: sans-serif;
 }
 .App {
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
