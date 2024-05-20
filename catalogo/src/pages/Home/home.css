@@ -2,6 +2,9 @@
   max-width: 800px;
   margin: 14px auto;
 }
+.loading {
+  margin-top: 50px;
+}
 .container .list-movies article {
   width: 100%;
   background-color: #fff;
@@ -9,7 +12,27 @@
   border-radius: 6px;
 }
 .container .list-movies article img {
-  width: 900px;
+  width: 700px;
   max-width: 100%;
-  max-height: 340px;
+  height: 500px;
+}
+.container .list-movies article strong {
+  margin-bottom: 14px;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+}
+.container .list-movies article a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #116efb;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0 10px 0;
+  text-decoration: none;
+  transition: all 0.8;
 }
