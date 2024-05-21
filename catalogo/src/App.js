@@ -1,4 +1,5 @@
 import RouteApp from "./routes";
+import Home from "./pages/Home";
 
 function App() {
   return (

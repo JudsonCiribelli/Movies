@@ -1,0 +1,50 @@
+.Movies {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.Movies h1 {
+  margin-bottom: 20px;
+  color: #121212;
+}
+.Movies ul {
+  width: 720px;
+  list-style: none;
+}
+.Movies ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.Movies span {
+  font-size: 22px;
+  color: #121212;
+  margin-left: 20px;
+}
+.Movies div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Movies div a {
+  text-decoration: none;
+  color: #121212;
+  margin-right: 15px;
+}
+.Movies div button {
+  background-color: #116efb;
+  color: #fff;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+}
