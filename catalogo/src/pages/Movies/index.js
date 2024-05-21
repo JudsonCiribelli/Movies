@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate, json } from "react-router-dom";
 import api from "../../services/api";
 import "../Movies/movie.css";
+import { toast } from "react-toastify";
 
 function Movies() {
   const { id } = useParams();
@@ -45,12 +46,12 @@ function Movies() {
       (filmesSalvo) => filmesSalvo.id === movie.id
     );
     if (hasFilme) {
-      alert("Filme ja esta salvo na lista");
+      toast.warn("Este filme ja está na sua lista!");
       return;
     }
     filmesSalvos.push(movie);
     localStorage.setItem("@Prime", JSON.stringify(filmesSalvos));
-    alert("Filme salvo com sucesso");
+    toast.success("Filme salvo com sucesso!");
   }
 
   if (loading) {
