@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import api from "../../services/api";
 import "../Movies/movie.css";
 
 function Movies() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const [movie, setMovie] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -23,6 +25,7 @@ function Movies() {
         })
         .catch(() => {
           console.log("FILME NAO ENCONTRADO");
+          navigate("/Home", { replace: true });
         });
     }
 
@@ -31,7 +34,7 @@ function Movies() {
     return () => {
       console.log("COMPONENTE FOI DESMONTADO");
     };
-  }, []);
+  }, [navigate, id]);
 
   if (loading) {
     return (
@@ -61,7 +64,13 @@ function Movies() {
         <div className="area-buttons">
           <button>Salvar</button>
           <button>
-            <a href="#">Trailer</a>
+            <a
+              target="_blank"
+              rel="external"
+              href={`https://youtube.com/results?search_query=${movie.title} trailer`}
+            >
+              Trailer
+            </a>
           </button>
         </div>
       </div>
